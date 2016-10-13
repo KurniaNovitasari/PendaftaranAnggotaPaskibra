@@ -56,6 +56,8 @@ public class MainActivity extends AppCompatActivity {
             String nama = etNama.getText().toString();
         }
 
+        String JK = null;
+
     }
 
     private boolean isValid() {
