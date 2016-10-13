@@ -63,6 +63,41 @@ public class MainActivity extends AppCompatActivity {
             JK = RB.getText().toString();
         }
 
+        String mtr = "Materi : \n";
+        int startlen = mtr.length();
+        int chk = 0;
+        if (cbSb.isChecked()) {
+            mtr += cbSb.getText() + "\n";
+            chk++;
+        }
+        if (cbLk.isChecked()) {
+            mtr += cbLk.getText() + "\n";
+            chk++;
+        }
+        if (cbPbb.isChecked()) {
+            mtr += cbPbb.getText() + "\n";
+            chk++;
+        }
+        if (cbPp.isChecked()) {
+            mtr += cbPp.getText() + "\n";
+            chk++;
+        }
+
+        if (mtr.length() == startlen) mtr += "Tidak ada pada pilihan";
+
+        if (chk >= 3) {
+            StringBuilder builder = new StringBuilder();
+            builder.append("Selamat Anda Diterima ! \n \n");
+            builder.append("Nama : " + etNama.getText().toString() + "\n");
+            builder.append("Kelas : " + spKelas.getSelectedItem().toString() + "\n");
+            builder.append("Jenis Kelamin : " + JK + "\n");
+            builder.append(mtr + "\n");
+
+            tvHasil.setText(builder);
+        } else {
+            tvHasil.setText("Maaf Anda Tidak Terima" + "\n" + "Penguasaan Materi Minimal 3");
+        }
+
     }
 
     private boolean isValid() {
@@ -80,6 +115,7 @@ public class MainActivity extends AppCompatActivity {
         }
         return valid;
     }
+
 
 }
 
