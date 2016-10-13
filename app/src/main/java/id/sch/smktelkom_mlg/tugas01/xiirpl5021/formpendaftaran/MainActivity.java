@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -57,6 +58,10 @@ public class MainActivity extends AppCompatActivity {
         }
 
         String JK = null;
+        if (rgJK.getCheckedRadioButtonId() != -1) {
+            RadioButton RB = (RadioButton) findViewById(rgJK.getCheckedRadioButtonId());
+            JK = RB.getText().toString();
+        }
 
     }
 
