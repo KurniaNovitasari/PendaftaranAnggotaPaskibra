@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="provinsi">
+        <item> XII-RPL-1</item>
+        <item> XII-RPL-2</item>
+        <item> XII-RPL-3</item>
+        <item> XII-RPL-4</item>
+        <item> XII-RPL-5</item>
+        <item> XII-TKJ-1</item>
+        <item> XII-TKJ-2</item>
+        <item> XII-TKJ-3</item>
+        <item> XII-TKJ-4</item>
+    </string-array>
+</resources>
