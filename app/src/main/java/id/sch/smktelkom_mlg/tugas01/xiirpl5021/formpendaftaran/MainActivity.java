@@ -95,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
 
             tvHasil.setText(builder);
         } else {
-            tvHasil.setText("Maaf Anda Tidak Terima" + "\n" + "Penguasaan Materi Minimal 3");
+            tvHasil.setText("Maaf Anda Tidak diTerima" + "\n" + "Penguasaan Materi Minimal 3");
         }
 
     }
